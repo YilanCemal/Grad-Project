@@ -1,0 +1,360 @@
+body{
+ background:rgb(34, 33, 33);
+ overflow-x: hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+.Navbar_Container a{
+color:white
+}
+
+.Navbar_Container a:hover{
+   color: rgb(9, 196, 108);
+}
+
+/* Style the "active" element to highlight the current page */
+
+/* .Navbar_Container a.active {
+    background-color: greenyellow;
+    color: black;
+  } */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* navbar konteynırı */
+
+.Navbar_Container{
+    font-size:18px ;
+    
+    background-color:rgb(34, 33, 33);
+    width:auto;
+    height: 80px;
+
+    /* position:fixed; */
+    
+    /* border: 2px solid; */
+
+    font-size: 22px;
+
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+
+}
+
+
+/* navbar ve itemleri */
+
+.Navbar-I1{
+    margin-right: auto;
+    font-size: 24px;
+    margin-left:25px;
+}
+
+
+.Navbar-I2{
+    margin-right: 2rem;
+}
+
+.Navbar-I3{
+    margin-right: 2rem;
+}
+
+
+.Navbar-I4{
+    margin-right: 2rem;
+}
+
+
+.Navbar-I5{
+    margin-right: 2rem;
+}
+
+
+.Navbar-I6{
+    margin-right: 2rem;
+}
+
+
+.Navbar-I7{
+    margin-right: 2rem;
+    border: 2px solid;
+    background-color: green;
+    border-radius: 4px;
+    padding: 5px 12px;
+}
+
+.Navbar-I7:hover{
+  background:black;
+  color:green;
+}
+
+
+/* foto  */
+
+.CoverImg{
+    display: flex;
+    justify-content:center;
+    padding:55px;    
+}
+
+#CoverImgId{
+  width:1750px;
+  height:530px;
+}
+
+ 
+/* ortadaki karakutu */
+
+.littlebox-blackbox{
+    
+   width: 900px;
+   height: 62px;
+   background-color:rgb(34, 33, 33);
+   position: relative;
+   top:-550px;
+   left:470px;
+   
+}
+
+.littlebox-blackbox a{
+    color:white;
+    font-size: 20px;
+}
+
+#link1{
+    background-color: rgb(34, 33, 33);
+    position: relative;
+    left:15px;
+    font-size: 28px;
+    top:10px;
+}
+
+#link1:hover{
+  color:rgb(9, 196, 108);
+}
+
+#link2{
+  background-color: rgb(34, 33, 33);
+  position: relative;
+  left:175px;
+  font-size: 28px;
+  top:10px;
+  
+}
+
+#link2:hover{
+  color:rgb(9, 196, 108);
+}
+
+#link3{
+  background-color: rgb(34, 33, 33);
+  position: relative;
+  left:375px;
+  font-size: 28px;
+  top:10px;
+}
+
+#link3:hover{
+  color:rgb(9, 196, 108);
+}
+
+ 
+  
+  /* Style the search box inside the navigation bar */
+  .littlebox input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .littlebox .search-container {
+    float: right;
+  }
+
+  .littlebox .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: green;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color:white;
+  }
+  
+  .littlebox .search-container button:hover {
+    background: black;
+    color:rgb(9, 196, 108);
+  }
+  
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .Navbar_Container a, .littlebox input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .littlebox input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+
+
+#ExploreCage{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:space-evenly;
+
+}
+#ExploreTitle{
+ color:white;
+ position: relative;;
+ left:120px;
+}
+
+#Buying{
+  color:white;
+  margin-right: 2rem;
+  border: 2px solid;
+  border-radius: 4px;
+  padding: 2px 7px;
+}
+
+#Buying:hover{
+  background-color:rgb(9, 196, 108);
+  color: black;
+}
+
+#Selling{
+  color:white;
+  margin-right: 2rem;
+  border: 2px solid;
+  border-radius: 4px;
+  padding: 2px 7px;
+}
+
+#Selling:hover{
+  background-color:rgb(9, 196, 108);
+  color: black;
+}
+
+#Renting{
+  color:white;
+  margin-right: 2rem;
+  border: 2px solid;
+  border-radius: 4px;
+  padding: 2px 7px;
+}
+
+#Renting:hover{
+  background-color:rgb(9, 196, 108);
+  color: black;
+}
+
+#k1img{
+  width:250px;
+
+  margin-right: 2rem;
+  border: 5px solid;
+  border-radius: 4px;
+  padding: 0px 0px;
+  color:rgb(36,156,76);
+}
+
+#k15img{
+  width:250px;
+  
+  margin-right: 2rem;
+  border: 5px solid;
+  border-radius: 4px;
+  padding: 0px 0px;
+  color:rgb(36,156,76);
+}
+
+#k10img{
+  width:250px;
+  
+  margin-right: 2rem;
+  border: 5px solid;
+  border-radius: 4px;
+  padding: 0px 0px;
+  color:rgb(36,156,76);
+}
+
+#k2img{
+  width:250px;
+  
+  margin-right: 2rem;
+  border: 5px solid;
+  border-radius: 4px;
+  padding: 0px 0px;
+  color:rgb(36,156,76);
+}
+
+
+.IconSearch{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:space-between;
+
+}
+
+#IconSearch1{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+#IconSearch2{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+#IconSearch3{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.IconOrText-White{
+  color:white;
+}
+
+
+
+#Text1{
+  position: relative;
+  top:10px;
+  left: 0px;
+  font-size: 20px;
+}
+
+#Text2{
+  position: relative;
+  top:-40px;
+  left: 585px;
+  font-size: 20px;
+}
+
+#Text3{
+  position: relative;
+  top:-90px;
+  left: 1130px;
+  font-size: 20px;
+}
