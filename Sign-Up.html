@@ -1,0 +1,61 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Sign-up Form</title>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> 
+    <link rel="stylesheet" href="Sign-Up.css">   
+</head>    
+<body>    
+  
+    <div class="login">    
+    <form id="login" method="post" action="login.php">  
+        <div class="header">
+            <img src="images/NCRealEstate-logo.jpg" alt="logo" />
+            <h2>NCRealEstate.com</h2>
+        </div>
+        <br>
+        <h2>Create account</h2><br>   
+        
+        <label><b>Username (How other users see your name)    
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" style="color:white;">    
+        <br><br>   
+
+        <label><b>E-mail<br>   
+        </b>    
+        </label>    
+        <input type="text" name="E-mail" id="E-mail" style="color:white;">    
+        <br><br>  
+
+        <label><b>Password <br>     
+        </b>
+        </label>    
+        <input type="Password" name="Pass" id="Pass" style="color:white;">  
+        <i class="far fa-eye" id="togglePassword"></i>  
+        <br><br>   
+        <br><br>
+        <input type="submit" name="log" id="log" value="Create account">   
+            
+        <br><br>   
+        <br><br>
+        <p>Already have an account?<a href="/log in/index1.html"> Login</a></p>
+           
+    </form>     
+</div>    
+
+<script>
+   const togglePassword = document.querySelector('#togglePassword');
+   const Password = document.querySelector('#Pass');
+
+   togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = Password.getAttribute('type') === 'Password' ? 'text' : 'Password';
+    Password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+}); 
+</script>
+
+</body>    
+</html>    
