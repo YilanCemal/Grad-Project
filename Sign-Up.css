@@ -12,7 +12,14 @@ body
         padding: 70px;  
         background: #36454F;     
         border-radius: 15px ;         
-}  
+} 
+
+@media only screen and (max-width: 600px) {
+    .form {
+      width: 100%;
+    }
+  }
+
 h2{  
     text-align: center;   
     color: white;  
