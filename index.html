@@ -9,13 +9,12 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9410b08b7b.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="index.css">
+
+    <script src="buzu.js"></script>
     
     
     
@@ -25,17 +24,8 @@
     
    <header>
     <div class="NCRealEstateLogo"><a href="index.html"><img src="images/NCLogo-White-Text-removebg-preview.png" alt="no-logo"></a></div>
-    <div class="littlebox">
-      <div class="search-container">
-          <form action="/action_page.php">
-              <input type="text" placeholder="Search.." id="search" name="search">
-            <button type="submit" id="subbutton">Search</button>
-          </form>
-        </div>     
-     </div>
     <nav>
-      
-   
+      <div class="navbar-linkz" id="navbar-links">
     <ul>
       <li class="Navbar-I2"><a href="#">Buy</a></li>
       <li class="Navbar-I3"><a href="#">Rent</a></li>
@@ -43,15 +33,130 @@
       <li class="Navbar-I5"><a href="#">New Homes</a></li>
       <li class="Navbar-I6"><a href="/sign-up/index.html">Sign up</a></li>
       <li class="Navbar-I7"><a href="/log in/index1.html  ">Login</a></li>
-     </ul>
+      
+        <!-- <i class="fa fa-bars" style="color:red"></i> -->
+      
+    </ul>
+      
+    </div>
+
     </nav>
     </header>
 
    
     
     <div class="CoverImg">
-      <img src="images/k9.jpeg" alt="no" class="d-flex justify-content-center" id="CoverImgId">
+     <div class="boxy">
+      <div class="littlebox">
+       <div class="search-container">
+            <form action="/action_page.php">
+              
+              
+              <div class="select"  id="select-1">
+                <label for="Home-icon"><i class="fa fa-map-marker" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+                <select>
+                  <option value="0">City</option>
+                  <option value="1">Famagusta(Mağusa)</option>
+                  <option value="2">Nicosia(Lefkoşa)</option>
+                  <option value="3">Kyrenia(Girne)</option> 
+                </select>
+              </div>
+
+              <div class="select" id="select-2">
+                
+                <label for="Home-icon"><i class="fa fa-home" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+                <select>
+                  <option value="0">Type of Area to Buy</option>
+                  <option value="1">Housing</option>
+                  <option value="2">Land</option>
+                </select>
+              </div>
+
+
+              <div class="select" id="select-3">
+                
+                <label for="Home-icon"><i class="fa fa-building" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+                <select>
+                  <option value="0">Resdience Type</option>
+                  <option value="1">Villa</option>
+                  <option value="2">Apartment</option>
+                  <option value="3">Studio</option>
+                  <option value="4">Double Villa</option>
+                  <option value="5">Penthouse</option>
+                  <option value="6">Residence</option>
+                </select>
+              </div>
+
+
+              <div class="select" id="select-4">
+                
+                <label for="Home-icon"><i class="fa fa-people-roof" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+                <select>
+                  <option value="0">Room's</option>
+                  <option value="1">1+0</option>
+                  <option value="2">1+1</option>
+                  <option value="3">2+1</option>
+                  <option value="4">2+2</option>
+                  <option value="5">3+1</option>
+                  <option value="6">3+2</option>
+                  <option value="7">4+1</option>
+                  <option value="8">4+2</option>
+                </select>
+              </div>
+
+
+
+
+              <div class="select" id="select-5">
+                
+                <label for="Home-icon"><i class="fa fa-money-bill-trend-up" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+                <select>
+                  <option value="0">Least Price</option>
+                  <option value="1">10.000</option>
+                  <option value="2">20.000</option>
+                  <option value="3">30.000</option>
+                  <option value="3">40.000</option>
+                  <option value="3">50.000</option>
+                  <option value="3">60.000</option>
+                  <option value="3">70.000</option>
+                  <option value="3">80.000</option>
+                  <option value="3">90.000</option>
+                  <option value="3">100.000</option>
+                </select>
+              </div>
+
+
+
+              <div class="select" id="select-6">
+                
+                <label for="Home-icon"><i class="fa fa-down-long" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+                <select>
+                  <option value="0">Top Price</option>
+                  <option value="1">10.000</option>
+                  <option value="2">20.000</option>
+                  <option value="3">30.000</option>
+                  <option value="3">40.000</option>
+                  <option value="3">50.000</option>
+                  <option value="3">60.000</option>
+                  <option value="3">70.000</option>
+                  <option value="3">80.000</option>
+                  <option value="3">90.000</option>
+                  <option value="3">100.000</option>
+                </select>
+              </div>
+
+
+              
+              
+              
+              <button type="submit" id="subbutton">Search <label for="Home-icon" id="search-icon"><i class="fa fa-search" style="font-size:18px;color:rgb(75, 73, 73);"></i></label> </button>
+          
+            </form>
+        </div>     
+       </div>
+     </div>
     </div>
+    
     
   
 
