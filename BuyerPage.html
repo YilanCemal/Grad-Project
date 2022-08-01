@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/9410b08b7b.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="BuyerPage.css">
     
+    <script src="Buyer.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="/images/ShortcutIcon.png">
     
     
     <title>Buyer Page</title>
@@ -18,65 +19,1002 @@
 <body>
     
 
-  <header>
-  <div class="NCRealEstateLogo"><a href="index.html"><img src="images/NCLogo.png" alt="no-logo"></a></div>
-  <nav>
- 
-  <ul>
-    <li class="Navbar-I2"><a href="#">Buy</a></li>
-    <li class="Navbar-I3"><a href="#">Rent</a></li>
-    <li class="Navbar-I5"><a href="#">New Homes</a></li> 
-    <li class="UserName"><a href="#">UserName</a></li>
-  </ul>
+    
 
-  </nav>
-  </header>
-        
+  <header>
+    <div class="NCRealEstateLogo"><a href="index.html"><img src="images/NCLogo-White-Text-removebg-preview.png" alt="no-logo"></a></div>
+    <nav>
+      <div class="navbar-linkz" id="navbar-links">
+    <ul>
+      <li class="Navbar-I2"><a href="#">Buy</a></li>
+      <li class="Navbar-I3"><a href="#">Rent</a></li>
+      <li class="Navbar-I5"><a href="#">New Homes</a></li>
+      <li class="Navbar-I6">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">UserName</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">My Account</a>
+          <a href="#">Log Out</a>
+        </div>
+        </div>
+      </li>
+        <!-- <i class="fa fa-bars" style="color:red"></i> -->
+      
+    </ul>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Buy</a>
+      <a href="#">Rent</a>
+      <a href="#">New Homes</a>
+      <a href="#">My Account</a>
+      <a href="#"style="color:red;">Log Out</a>
+
+    
+    </div>
+    
+    <div class="main">
+    <span id="navbar-button" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    </nav>
+    </header>
+
+
+
 
 
     <div class="CoverImg">
-        <img src="images/k9.jpeg" alt="no" class="d-flex justify-content-center" id="CoverImgId">
-    </div>
 
-    <div class="littlebox">
-      <div class="littlebox-blackbox">
+        <div id="mySidenav2" class="sidenav2">
+          <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
+          
+          <a href="#" class="select2">  
+            <select>
+            <option value="0">City</option>
+            <option value="1">Famagusta(Mağusa)</option>
+            <option value="2">Nicosia(Lefkoşa)</option>
+            <option value="3">Kyrenia(Girne)</option> 
+            </select>  
+            <label for="Home-icon"><i class="fa fa-map-marker" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+          </a>
+          
+          <a href="#" class="select2">
+            <select>
+              <option value="0">Type of Area</option>
+              <option value="1">Housing</option>
+              <option value="2">Land</option>
+            </select>
+            <label for="Home-icon"><i class="fa fa-home" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+          </a>
+  
+          <a href="#" class="select2">
+            <select>
+              <option value="0">Resdience Type</option>
+              <option value="1">Villa</option>
+              <option value="2">Apartment</option>
+              <option value="3">Studio</option>
+              <option value="4">Double Villa</option>
+              <option value="5">Penthouse</option>
+              <option value="6">Residence</option>
+            </select>
+            <label for="Home-icon"><i class="fa fa-building" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+          </a>
+          
+          <a href="#" class="select2">
+            <select>
+            <option value="0">Room's</option>
+            <option value="1">1+0</option>
+            <option value="2">1+1</option>
+            <option value="3">2+1</option>
+            <option value="4">2+2</option>
+            <option value="5">3+1</option>
+            <option value="6">3+2</option>
+            <option value="7">4+1</option>
+            <option value="8">4+2</option>
+          </select>
+          <label for="Home-icon"><i class="fa fa-people-roof" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+          </a>
+          
+          <a href="#" class="select2">
+            <select>
+              <option value="0">Top Price</option>
+              <option value="1">10.000</option>
+              <option value="2">20.000</option>
+              <option value="3">30.000</option>
+              <option value="3">40.000</option>
+              <option value="3">50.000</option>
+              <option value="3">60.000</option>
+              <option value="3">70.000 and 70.000+</option>
+            </select>
+            <label for="Home-icon"><i class="fa fa-money-bill-trend-up" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+          </a>
+          
+          <a href="#" class="select2">
+            <select>
+              <option value="0">Least Price</option>
+              <option value="1">10.000</option>
+              <option value="2">20.000</option>
+              <option value="3">30.000</option>
+              <option value="3">40.000</option>
+              <option value="3">50.000</option>
+              <option value="3">60.000</option>
+              <option value="3">70.000 and 70.000+</option>
+            </select>
+            <label for="Home-icon"><i class="fa fa-down-long" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+          </a>
+          <button type="submit" id="subbutton2">Search <label for="Home-icon" id="search-icon"></button>
+        </div>
+  
+  
+        <div class="main2">
+          <span id="navbar-button2" style="font-size:30px;cursor:pointer" onclick="openNav2()">Click For Search <i class="fa fa-search" style="font-size:22px;color:rgb(75, 73, 73);"></i></label> </span>
+          </div>
+  
+  
+  
+       <div class="boxy">
+        <div class="littlebox">
          <div class="search-container">
-             <form action="/action_page.php">
-                 <input type="text" placeholder="Search.." id="search" name="search">
-               <button type="submit" id="subbutton">Search</button>
-             </form>
-           </div>     
-     </div>
-     </div>
-
-    
-
-    <div class="" id="ExploreCage">
-      <img src="images/k13.jpeg" alt="no-k1" id="k13img">
-      <img src="images/k2.jpeg" alt="no-k1" id="k1img">
-      <img src="images/k10.jpeg" alt="no-k1" id="k15img">
-      <img src="images/k15.jpeg" alt="no-k1" id="k10img">
-      <img src="images/k1.jpeg" alt="no-k1" id="k2img">
-    </div>
+              <form action="/action_page.php">
+                
+                
+                <div class="select"  id="select-1">
+                  <label for="Home-icon"><i class="fa fa-map-marker" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+                  <select>
+                    <option value="0">City</option>
+                    <option value="1">Famagusta(Mağusa)</option>
+                    <option value="2">Nicosia(Lefkoşa)</option>
+                    <option value="3">Kyrenia(Girne)</option> 
+                  </select>
+                </div>
   
-
-
-    <div class="container mt-5">
-      <div class="IconSearch">
+                <div class="select" id="select-2">
+                  
+                  <label for="Home-icon"><i class="fa fa-home" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+                  <select>
+                    <option value="0">Type of Area to Buy</option>
+                    <option value="1">Housing</option>
+                    <option value="2">Land</option>
+                  </select>
+                </div>
   
-        <a href="#"><img src="images/Iconss1.jpg" alt="no-mapicon" id="IconSearch1"></a>
-        <a href="#"><img src="images/icon2.jpg" alt="no-mapicon" id="IconSearch2"></a>
-        <a href="#"><img src="images/icon3.jpg" alt="no-mapicon" id="IconSearch3"></a>
   
+                <div class="select" id="select-3">
+                  
+                  <label for="Home-icon"><i class="fa fa-building" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+                  <select>
+                    <option value="0">Resdience Type</option>
+                    <option value="1">Villa</option>
+                    <option value="2">Apartment</option>
+                    <option value="3">Studio</option>
+                    <option value="4">Double Villa</option>
+                    <option value="5">Penthouse</option>
+                    <option value="6">Residence</option>
+                  </select>
+                </div>
+  
+  
+                <div class="select" id="select-4">
+                  
+                  <label for="Home-icon"><i class="fa fa-people-roof" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+                  <select>
+                    <option value="0">Room's</option>
+                    <option value="1">1+0</option>
+                    <option value="2">1+1</option>
+                    <option value="3">2+1</option>
+                    <option value="4">2+2</option>
+                    <option value="5">3+1</option>
+                    <option value="6">3+2</option>
+                    <option value="7">4+1</option>
+                    <option value="8">4+2</option>
+                  </select>
+                </div>
+  
+  
+  
+  
+                <div class="select" id="select-5">
+                  
+                  <label for="Home-icon"><i class="fa fa-money-bill-trend-up" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+                  <select>
+                    <option value="0">Top Price</option>
+                    <option value="1">10.000</option>
+                    <option value="2">20.000</option>
+                    <option value="3">30.000</option>
+                    <option value="3">40.000</option>
+                    <option value="3">50.000</option>
+                    <option value="3">60.000</option>
+                    <option value="3">70.000</option>
+                    <option value="3">80.000</option>
+                    <option value="3">90.000</option>
+                    <option value="3">100.000</option>
+                  </select>
+                </div>
+  
+  
+  
+                <div class="select" id="select-6">
+                  
+                  <label for="Home-icon"><i class="fa fa-down-long" style="font-size:48px;color:rgb(9, 196, 108);"></i></label>
+                  <select>
+                    <option value="0">Least Price</option>
+                    <option value="1">10.000</option>
+                    <option value="2">20.000</option>
+                    <option value="3">30.000</option>
+                    <option value="3">40.000</option>
+                    <option value="3">50.000</option>
+                    <option value="3">60.000</option>
+                    <option value="3">70.000</option>
+                    <option value="3">80.000</option>
+                    <option value="3">90.000</option>
+                    <option value="3">100.000</option>
+                  </select>
+                </div>
+  
+  
+                
+                
+                
+                <button type="submit" id="subbutton">Search <label for="Home-icon" id="search-icon"><i class="fa fa-search" style="font-size:18px;color:rgb(75, 73, 73);"></i></label> </button>
+            
+              </form>
+          </div>     
+         </div>
+       </div>
       </div>
+
+
+
+
+ 
+
+
+
+      <!-- 
+    - #SERVICE
+  -->
+
+  <section class="service" id="service">
+    <div class="container">
+
+      <p class="section-subtitle">Services</p>
+
+      <h2 class="h2 section-title">You can search by</h2>
+
+      <ul class="service-list">
+
+        <li>
+          <div class="service-card">
+
+            <div class="card-icon">
+              <img src="images/Iconss1-removebg-preview.png" alt="Service icon">
+            </div>
+
+            <h3 class="h3 card-title">
+              <p href="#">Search By Location</p>
+            </h3>
+
+            <p class="card-text">
+              You can search homes for sale available on the website by its location, we can match you with a house you will want
+              to call home.
+            </p>
+
+            <a href="#" class="card-link">
+              <span>Search by Location</span>
+
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="service-card">
+
+            <div class="card-icon">
+              <img src="images/icon2-removebg-preview.png" alt="Service icon" id="icon2">
+            </div>
+
+            <h3 class="h3 card-title">
+              <p href="#">Search By Price</p>
+            </h3>
+
+            <p class="card-text">
+              You can search homes for sale available on the website by its price, we can match you with a house you will want
+              to call home.
+            </p>
+
+            <a href="#" class="card-link">
+              <span>Search by Price</span>
+
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="service-card">
+
+            <div class="card-icon">
+              <img src="images/icon3-removebg-preview.png" alt="Service icon">
+            </div>
+
+            <h3 class="h3 card-title">
+              <p href="#">Search By House Type</p>
+            </h3>
+
+            <p class="card-text">
+              You can search homes for sale available on the website by its type, we can match you with a house you will want
+              to call home.
+            </p>
+
+            <a href="#" class="card-link">
+              <span>Search by Type</span>
+
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- 
+    - #PROPERTY
+  -->
+
+  <section class="property" id="property">
+    <div class="container">
+
+      <p class="section-subtitle">Properties</p>
+
+      <h2 class="h2 section-title">Featured Listings</h2>
+
+      <ul class="property-list has-scrollbar">
+
+        <!-- ilk property -->
+
+        <li>
+          <div class="property-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="images/k3.jpeg" alt="New Apartment Nice View" class="w-100">
+              </a>
+
+              <div class="card-badge green">For Rent</div>
+
+              <div class="banner-actions">
+
+                <button class="banner-actions-btn">
+                  
+                  <address><i class="fa-solid fa-location-dot"></i>Belmont Gardens, Chicago</address>
+                </button>
+
+                <button class="banner-actions-btn">
+                  <i class="fa-solid fa-camera"></i>
+
+                  <span>4</span>
+                </button>
+
+                <button class="banner-actions-btn">
+                  <i class="fa-solid fa-film"></i>
+
+                  <span>2</span>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-price">
+                <strong>$34,900</strong>/Month
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="#">New Apartment Nice View</a>
+              </h3>
+
+              <p class="card-text">
+                Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+              </p>
+
+              <ul class="card-list">
+
+                <li class="card-item">
+                  <strong>3</strong>
+
+                  <i class="fa-solid fa-bed"></i>
+
+                  <span>Bedrooms</span>
+                </li>
+
+                <li class="card-item">
+                  <strong>2</strong>
+
+                  <i class="fa-solid fa-person"></i>
+
+                  <span>Bathrooms</span>
+                </li>
+
+                <li class="card-item">
+                  <strong>3450</strong>
+
+                  <i class="fa-regular fa-square"></i>
+
+                  <span>Square Ft</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card-footer">
+
+              <div class="card-author">
+
+                <figure class="author-avatar">
+                  <img src="images/deyuuuumm.PNG" alt="William Seklo" class="w-100">
+                </figure>
+
+                <div>
+                  <p class="author-name">
+                    <a href="#">Baronu Topiçınaru</a>
+                  </p>
+
+                  <p class="author-title">Estate Agents</p>
+                </div>
+
+              </div>
+
+              <div class="card-footer-actions">
+
+                <button class="card-footer-actions-btn">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+
+                <button class="card-footer-actions-btn">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+
+                <button class="card-footer-actions-btn">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+         
+        <!-- yeni property-1 -->
+
+        <li>
+          <div class="property-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="images/k12.jpeg" alt="Modern Apartments" class="w-100">
+              </a>
+
+              <div class="card-badge red">For Sales</div>
+
+              <div class="banner-actions">
+
+                <button class="banner-actions-btn">
+                  
+
+                  <address><i class="fa-solid fa-location-dot"></i>Belmont Gardens, Chicago</address>
+                </button>
+
+                <button class="banner-actions-btn">
+                  <i class="fa-solid fa-camera"></i>
+
+                  <span>4</span>
+                </button>
+
+                <button class="banner-actions-btn">
+                  <i class="fa-solid fa-film"></i>
+
+                  <span>2</span>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-price">
+                <strong>$34,900</strong>/Month
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="#">Modern Apartments</a>
+              </h3>
+
+              <p class="card-text">
+                Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+              </p>
+
+              <ul class="card-list">
+
+                <li class="card-item">
+                  <strong>3</strong>
+
+                  <i class="fa-solid fa-bed"></i>
+
+                  <span>Bedrooms</span>
+                </li>
+
+                <li class="card-item">
+                  <strong>2</strong>
+
+                  <i class="fa-solid fa-person"></i>
+
+                  <span>Bathrooms</span>
+                </li>
+
+                <li class="card-item">
+                  <strong>3450</strong>
+
+                  <i class="fa-regular fa-square"></i>
+
+                  <span>Square Ft</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card-footer">
+
+              <div class="card-author">
+
+                <figure class="author-avatar">
+                  <img src="images/deyuuuumm.PNG" alt="William Seklo" class="w-100">
+                </figure>
+
+                <div>
+                  <p class="author-name">
+                    <a href="#">Baronu Topiçınaru</a>
+                  </p>
+
+                  <p class="author-title">Estate Agents</p>
+                </div>
+
+              </div>
+
+              <div class="card-footer-actions">
+
+                <button class="card-footer-actions-btn">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+
+                <button class="card-footer-actions-btn">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+
+                <button class="card-footer-actions-btn">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+        <!-- yeni property-2 -->
+
+        <li>
+          <div class="property-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="images/k15.jpeg" alt="Comfortable Apartment" class="w-100">
+              </a>
+
+              <div class="card-badge green">For Rent</div>
+
+              <div class="banner-actions">
+
+                <button class="banner-actions-btn">
+                 
+                  <address><i class="fa-solid fa-location-dot"></i>Belmont Gardens, Chicago</address>
+                </button>
+
+                <button class="banner-actions-btn">
+                  <i class="fa-solid fa-camera"></i>
+
+                  <span>4</span>
+                </button>
+
+                <button class="banner-actions-btn">
+                  <i class="fa-solid fa-film"></i>
+
+                  <span>2</span>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-price">
+                <strong>$34,900</strong>/Month
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="#">Best Residences</a>
+              </h3>
+
+              <p class="card-text">
+                Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+              </p>
+
+              <ul class="card-list">
+
+                <li class="card-item">
+                  <strong>3</strong>
+
+                  <i class="fa-solid fa-bed"></i>
+
+                  <span>Bedrooms</span>
+                </li>
+
+                <li class="card-item">
+                  <strong>2</strong>
+
+                  <i class="fa-solid fa-person"></i>
+
+                  <span>Bathrooms</span>
+                </li>
+
+                <li class="card-item">
+                  <strong>3450</strong>
+
+                  <i class="fa-regular fa-square"></i>
+
+                  <span>Square Ft</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card-footer">
+
+              <div class="card-author">
+
+                <figure class="author-avatar">
+                  <img src="images/berdu2.PNG" alt="William Seklo" class="w-100">
+                </figure>
+
+                <div>
+                  <p class="author-name">
+                    <a href="#">Bertu Aylıer</a>
+                  </p>
+
+                  <p class="author-title">Estate Agents</p>
+                </div>
+
+              </div>
+
+              <div class="card-footer-actions">
+
+                <button class="card-footer-actions-btn">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+
+                <button class="card-footer-actions-btn">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+
+                <button class="card-footer-actions-btn">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+        <!-- yeni property-3 -->
+
+        <li>
+          <div class="property-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="images/k10.jpeg" alt="Luxury villa in Rego Park" class="w-100">
+              </a>
+
+              <div class="card-badge green">For Rent</div>
+
+              <div class="banner-actions">
+
+                <button class="banner-actions-btn">
+                  
+
+                  <address><i class="fa-solid fa-location-dot"></i>Belmont Gardens, Chicago</address>
+                </button>
+
+                <button class="banner-actions-btn">
+                  <i class="fa-solid fa-camera"></i>
+
+                  <span>4</span>
+                </button>
+
+                <button class="banner-actions-btn">
+                  <i class="fa-solid fa-film"></i>
+
+                  <span>2</span>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-price">
+                <strong>$34,900</strong>/Month
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="#">Luxury villa in Rego Park</a>
+              </h3>
+
+              <p class="card-text">
+                Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+              </p>
+
+              <ul class="card-list">
+
+                <li class="card-item">
+                  <strong>3</strong>
+
+                  <i class="fa-solid fa-bed"></i>
+
+                  <span>Bedrooms</span>
+                </li>
+
+                <li class="card-item">
+                  <strong>2</strong>
+
+                  <i class="fa-solid fa-person"></i>
+
+                  <span>Bathrooms</span>
+                </li>
+
+                <li class="card-item">
+                  <strong>3450</strong>
+
+                  <i class="fa-regular fa-square"></i>
+
+                  <span>Square Ft</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card-footer">
+
+              <div class="card-author">
+
+                <figure class="author-avatar">
+                  <img src="images/bargın.PNG" alt="William Seklo" class="w-100">
+                </figure>
+
+                <div>
+                  <p class="author-name">
+                    <a href="#">Barkın Dövinç</a>
+                  </p>
+
+                  <p class="author-title">Estate Agents</p>
+                </div>
+
+              </div>
+
+              <div class="card-footer-actions">
+
+                <button class="card-footer-actions-btn">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+
+                <button class="card-footer-actions-btn">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+
+                <button class="card-footer-actions-btn">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+
+
+
+
+
+       <!-- 
+- #FOOTER
+-->
+
+<footer class="footer">
+
+<div class="footer-top">
+  <div class="container">
+
+    <div class="footer-brand">
+
+      <a href="#" class="logo">
+        <img src="images/NCLogo-White-Text-removebg-preview.png" alt="Homeverse logo">
+      </a>
       
-      <div class="text">
-      <p class="IconOrText-White" id="Text1">Search By Location</p>
-      <p class="IconOrText-White" id="Text2">Search By Price</p>
-      <p class="IconOrText-White" id="Text3">Search By House Type</p>
-     </div>
-     
-     </div>
+    </div>
+
+    <div class="footer-link-box">
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Company</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">About</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Blog</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">All Products</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Locations Map</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">FAQ</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Contact us</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Services</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Order tracking</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Wish List</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Login</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">My account</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Terms & Conditions</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Promotional Offers</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Customer Options</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Login</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">My account</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Wish List</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Order tracking</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">FAQ</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Contact us</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="footer-bottom">
+  <div class="container">
+
+    <p class="copyright">
+      &copy; 2022 <a href="#">NCRealEstate</a>. All Rights Reserved <a href="mailto:contact@NCRealEstate.com" class="contact-link">(contact@NCRealEstate)</a>
+    </p>
+
+  </div>
+</div>
+
+</footer>
+
+ 
+        
+
+
 
 
 

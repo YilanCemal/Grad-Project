@@ -6,6 +6,7 @@
 body{
     background:rgb(34, 33, 33);
     overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
    }
    
    a:link{
@@ -668,6 +669,35 @@ pointer-events: none;
 
 
 
+  /* Custom Select wrapper2 */
+  .select2 {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+  }
+  /* Arrow */
+  .select2::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #293746;
+    transition: .25s all ease;
+    pointer-events: none;
+    color:rgb(34, 33, 33);
+  }
+  /* Transition */
+  .select2:hover::after {
+    color: rgb(9, 196, 108);
+  }
+
+
+
+
        
    /*-----------------------------------*\
   #SERVICE
@@ -1082,7 +1112,9 @@ li { list-style: none; }
   @media  (max-width: 599px) {  
     
     
-    /* header */
+    .CoverImg{
+      width: fit-content;
+    }
   
     /* header {  
     flex-wrap: wrap;  
@@ -1111,7 +1143,7 @@ li { list-style: none; }
   
   
    .main2{
-    margin-left: 50px;
+    margin-left: 35px;
    }
   
    .property .container {
