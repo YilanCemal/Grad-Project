@@ -71,12 +71,46 @@ i{
   
 
 }  
+
+#log:hover{
+    background-color: rgb(34, 33, 33);
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+    color:rgb(9, 196, 108);
+   }
+
+#togglePassword:hover{
+    color:rgb(9, 196, 108);
+    transition: 0.25s ease-in-out;
+}
+
+#Sign-up:hover{
+    color:rgb(92, 235, 9);
+    transition: 0.25s ease-in-out; 
+}
+
+
 p{ 
     text-align: center;
     color: white;  
 }
 a{ 
     text-decoration: none;
-    color: #32CD32; 
+    color: rgb(9, 196, 108);
+}
+
+.Home-button{
+    color:#36454F;
+    border: 2px solid;
+    background-color: rgb(34, 33, 33);
+    border-radius: 4px;
+    padding: 5px 12px;
+}
+
+.Home-button:hover{
+    background:black;
+    color:rgb(9, 196, 108);
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
 }
 

@@ -14,11 +14,6 @@ body
         border-radius: 15px ;         
 } 
 
-@media only screen and (max-width: 600px) {
-    .form {
-      width: 100%;
-    }
-  }
 
 h2{  
     text-align: center;   
@@ -82,18 +77,50 @@ i{
     border-radius: 10px;  
     padding-left: 7px;  
     color: white; 
-    background-color:green  
+    background-color:rgb(9, 196, 108);
 }  
+
+#log:hover{
+ background-color: rgb(34, 33, 33);
+ transition: 0.25s ease-in-out;
+ cursor: pointer;
+ color:rgb(9, 196, 108);
+}
+
+
+
+#Already-Acc:hover{
+    color:rgb(92, 235, 9);
+    transition: 0.25s ease-in-out; 
+}
+
+#togglePassword:hover{
+    color:rgb(9, 196, 108);
+    transition: 0.25s ease-in-out;
+}
+
 p{ 
     text-align: center;
     color: white;  
 }
 a{ 
     text-decoration: none;
-    color: #32CD32; 
+    color: rgb(9, 196, 108);
 }
 
-/* @media  (max-width: 599px) {  
+.Home-button{
+    color:#36454F;
+    border: 2px solid;
+    background-color: rgb(34, 33, 33);
+    border-radius: 4px;
+    padding: 5px 12px;
+}
 
-    
-} */
+.Home-button:hover{
+    background:black;
+    color:rgb(9, 196, 108);
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+
+
